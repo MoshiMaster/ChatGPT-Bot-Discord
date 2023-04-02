@@ -34,7 +34,7 @@ const openai = new OpenAIApi(configuration);
 
 let conversationLog = [{ role: 'system', content: 'You are a friendly chatbot.' }];
 let model = 'gpt-3.5-turbo'; // default model
-const CHANCE_OF_REPLY = 0.5; // 50% chance of reply, (need to adjust the code so !commands have a 100% chance
+const CHANCE_OF_REPLY = 1; // 100% chance of reply, (need to adjust the code so !commands have a 100% chance
 
 
 client.on('messageCreate', async (message) => {
